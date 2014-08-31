@@ -17,6 +17,7 @@ public class ConvertSortedListToBinarySearchTree {
 		return;
 	}
 	/*
+	 * 将链表转换为平衡二叉树
 	 * 思路还是将链表折半，分成中点，左边，右边三个部分，
 	 * 中点作为子树的根节点，左边递归，返回值作为根节点做儿子，右边递归，返回值作为根节点右儿子
 	 * 

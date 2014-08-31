@@ -17,6 +17,10 @@ public class FlattenBinaryTreeToLinkedList {
 		test.flatten(root);
 	}
 	
+	/*
+	 * 将二叉树转换为单支的结构
+	 * 思路就是写一个非递归的前序遍历。
+	 */
     public void flatten(TreeNode tmproot) {
     	Stack<TreeNode> stack = new Stack<TreeNode>();
     	TreeNode root =tmproot;

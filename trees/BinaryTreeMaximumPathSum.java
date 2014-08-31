@@ -18,6 +18,7 @@ public class BinaryTreeMaximumPathSum {
 	
 	
 	/*
+	 * 求二叉树中一条路径上的值的最大和。路径的起点和终点可以为任意位置
 	 * 还是得用递归做。思路是：对于一棵树，比较根(root)、左子树最大路径值(lvalue)、右子树最大路径值(rvalue)。
 	 * 具体比较 root + rvalue+ lvalue ,  root , rvalue , lvalue 取其中的最大者和已有的max比较。如果比max大就更新max
 	 * 返回的时候，返回 root , root + lvalue, root + rvalue 中的最大值。 之所以不返回 root + rvalue+ lvalue 是因为路径的计算只能取一条。不能回头
